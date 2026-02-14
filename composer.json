@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "DivineOmega\\CliProgressBar\\": "./src/"
+      "JordJD\\CliProgressBar\\": "./src/"
     }
   },
   "replace": {
@@ -23,7 +23,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "3.0-dev"
+      "dev-master": "4.0-dev"
     }
   }
 }

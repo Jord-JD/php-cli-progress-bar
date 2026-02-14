@@ -1,6 +1,6 @@
 <?php
 
-namespace DivineOmega\CliProgressBar;
+namespace JordJD\CliProgressBar;
 
 use Khill\Duration\Duration;
 

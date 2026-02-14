@@ -19,7 +19,7 @@ The following code snippet shows a basic usage example.
 ```php
 $max = 250;
 
-$progressBar = new DivineOmega\CliProgressBar\ProgressBar;
+$progressBar = new JordJD\CliProgressBar\ProgressBar;
 $progressBar->setMaxProgress($max);
 
 for ($i=0; $i < $max; $i++) { 

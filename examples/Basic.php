@@ -1,6 +1,6 @@
 <?php
 
-use DivineOmega\CliProgressBar\ProgressBar;
+use JordJD\CliProgressBar\ProgressBar;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
