@@ -9,7 +9,7 @@ Progress bar for command line PHP scripts.
 To install, just run the following Composer command.
 
 ```
-composer require divineomega/php-cli-progress-bar
+composer require jord-jd/php-cli-progress-bar
 ```
 
 ## Usage
