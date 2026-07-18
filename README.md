@@ -29,3 +29,5 @@ for ($i=0; $i < $max; $i++) {
 
 $progressBar->complete();
 ```
+
+Calling `setMaxProgress()` before the first advancement starts the elapsed-time and ETC measurements. If you prepare a progress bar early, call `$progressBar->start()` immediately before processing to reset those measurements explicitly.

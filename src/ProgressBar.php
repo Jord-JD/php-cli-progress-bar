@@ -19,8 +19,16 @@ class ProgressBar
 
     public function __construct()
     {
+        $this->start();
+    }
+
+    public function start()
+    {
         $this->startTime = time();
         $this->lastProgressAdvancement = microtime(true);
+        $this->advancementTimings = [];
+
+        return $this;
     }
 
     public function setProgress($progress) 
@@ -36,7 +44,11 @@ class ProgressBar
         }
 
         $this->maxProgress = $maxProgress;
-        $this->maxAdvancementTimings = $maxProgress * 0.1;
+        $this->maxAdvancementTimings = max(1, (int) ceil($maxProgress * 0.1));
+
+        if ($this->progress == 0 && count($this->advancementTimings) == 0) {
+            $this->start();
+        }
 
         return $this;
     }
